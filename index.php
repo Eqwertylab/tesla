@@ -78,12 +78,12 @@
                   <tr class="price_row">
                     <td class="price_base"><s>5000р.</s></td>
                     <td><span class="price_medium">3490р.</span></td>
-                    <td><span class="price_best">2990р.</span></td>
+                    <td><span class="price_best __decor">2990р.</span></td>
                   </tr>
                   <tr>
                     <td class="price_base">выгода: <br>0р.</td>
-                    <td>выгода: <br>1510р.</td>
-                    <td>выгода: <br>4020р.</td>
+                    <td>выгода: <br><span class="price_medium">1510р.</span></td>
+                    <td>выгода: <br><span class="price_best">4020р.</span></td>
                   </tr>
                 </table>
               </div>
@@ -100,12 +100,17 @@
                   <div class="form_item">
                     <input type="text" name="phone" placeholder="Телефон" class="base_control">
                   </div>
+
+                  <div class="form_item">
+                    <div class="btn_wrap">
+                      <button class="btn __order gradient">Заказать</button>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
         </section>
-
       </main>
     </div>
     <footer class="footer">

@@ -84,6 +84,7 @@ body
   color: #fff;
   border: none;
   background: #008dd2;
+  outline: none;
 }
 
 .btn:hover
@@ -321,7 +322,7 @@ input.base_control
 {
   line-height: 38px;
 
-  height: 40px;
+  height: 45px;
   padding: 0 15px;
 }
 
@@ -343,6 +344,12 @@ input.base_control
   font-weight: 300;
   color: #ffffff;
 }
+
+
+
+/*
+ * Дескриптор
+ */
 
 .top_desc
 {
@@ -374,6 +381,12 @@ input.base_control
   opacity: 0.7;
 }
 
+
+
+/*
+ * Прайс
+ */
+
 .price_table
 {
   color: #ffffff;
@@ -400,13 +413,17 @@ input.base_control
 .price_best
 {
   font-size: 1.125rem;
-  display: inline-block;
-  border-bottom: 2px solid rgba(255,255,255,0.7);
-  padding-bottom: 2px;
-  position: relative;
 }
 
-.price_best:before
+.price_best.__decor
+{
+  display: inline-block;
+  position: relative;
+  border-bottom: 2px solid rgba(255,255,255,0.7);
+  padding-bottom: 2px;
+}
+
+.price_best.__decor:before
 {
   content: " ";
   display: block;
@@ -416,4 +433,86 @@ input.base_control
   background: url(../img/best-price-mobile.png) no-repeat 0 0;
   right: -34px;
   top: -12px;
+}
+
+
+
+/*
+ * Форма 1
+ */
+
+.top_form
+{
+  background: #ffffff;
+  padding: 23px;
+  border-radius: 0 0 25px 25px;
+  margin-top: 25px;
+}
+
+.top_form_head
+{
+  font-size: 1.4375rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.top_form .form_item
+{
+  margin-top: 25px;
+}
+
+.top_form .base_control
+{
+  border-color: #301d6b;
+}
+
+.top_form .base_control::-webkit-input-placeholder {color:#60518f;}
+.top_form .base_control::-moz-placeholder          {color:#60518f;}
+.top_form .base_control:-moz-placeholder           {color:#60518f;}
+.top_form .base_control:-ms-input-placeholder      {color:#60518f;}
+
+.base_control:focus::-webkit-input-placeholder {color: transparent}
+.base_control:focus::-moz-placeholder          {color: transparent}
+.base_control:focus:-moz-placeholder           {color: transparent}
+.base_control:focus:-ms-input-placeholder      {color: transparent}
+
+.btn_wrap
+{
+  padding: 11px 15px;
+  background: #f8f8f8;
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.35);
+  border-radius: 6px;
+}
+
+.btn_wrap .btn
+{
+  display: block;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #868181;
+  font-size: 1.5625rem;
+  line-height: 23px;
+  text-shadow: -1px 1px 2px rgba(0,0,0,0.4);
+  background: #d00000;
+  background: -moz-linear-gradient(top,  #d00000 0%, #da0202 40%, #be0101 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d00000), color-stop(40%,#da0202), color-stop(100%,#be0101));
+  background: -webkit-linear-gradient(top,  #d00000 0%,#da0202 40%,#be0101 100%);
+  background: -o-linear-gradient(top,  #d00000 0%,#da0202 40%,#be0101 100%);
+  background: -ms-linear-gradient(top,  #d00000 0%,#da0202 40%,#be0101 100%);
+  background: linear-gradient(to bottom,  #d00000 0%,#da0202 40%,#be0101 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d00000', endColorstr='#be0101',GradientType=0 );
+}
+
+.btn_wrap .btn:hover
+{
+  background: #e80000;
+background: -moz-linear-gradient(top,  #e80000 0%, #f20202 40%, #db0202 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e80000), color-stop(40%,#f20202), color-stop(100%,#db0202));
+background: -webkit-linear-gradient(top,  #e80000 0%,#f20202 40%,#db0202 100%);
+background: -o-linear-gradient(top,  #e80000 0%,#f20202 40%,#db0202 100%);
+background: -ms-linear-gradient(top,  #e80000 0%,#f20202 40%,#db0202 100%);
+background: linear-gradient(to bottom,  #e80000 0%,#f20202 40%,#db0202 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', endColorstr='#db0202',GradientType=0 );
+
 }
