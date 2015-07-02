@@ -1,0 +1,14 @@
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+/*
+ * Заголовок
+ */
+
+.menu a
+{
+  font-size: 1.125rem;
+  padding: 0 15px;
+}
+
+}  /* <-- Large devices */

@@ -1,0 +1,13 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+  /*
+   * Верхний блок
+   */
+
+  .top
+  {
+    height: 660px;
+  }
+
+} /* <-- Small devices */
