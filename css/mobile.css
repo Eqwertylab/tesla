@@ -340,7 +340,7 @@ input.base_control
 
 .top_head
 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: #ffffff;
 }
@@ -446,7 +446,9 @@ input.base_control
   background: #ffffff;
   padding: 23px;
   border-radius: 0 0 25px 25px;
-  margin-top: 25px;
+  width: 100%;
+  max-width: 400px;
+  margin: 25px auto 0;
 }
 
 .top_form_head
@@ -515,4 +517,97 @@ background: -ms-linear-gradient(top,  #e80000 0%,#f20202 40%,#db0202 100%);
 background: linear-gradient(to bottom,  #e80000 0%,#f20202 40%,#db0202 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', endColorstr='#db0202',GradientType=0 );
 
+}
+
+
+
+/*
+ * Таймер 1
+ */
+
+.countdown_wrap
+{
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+}
+
+.countdown_wrap:after,
+.countdown_wrap:before
+{
+  content: " ";
+  position: absolute;
+  display: block;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  
+  
+  width: 324px;
+  height: 198px;
+
+  left: -17px;
+  top: -12px;
+}
+
+.countdown_wrap:before
+{
+  z-index: 0;
+  background-image: url(../img/top-timer-before-background.png);
+}
+
+.countdown_wrap:after
+{
+  z-index: 100;
+  background-image: url(../img/top-timer-after-background.png);
+}
+
+.countdown
+{
+  background: rgba(1,5,27,0.7);
+  padding: 15px 25px; 
+  margin-top: 25px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 50;
+}
+
+.countdown_head
+{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.clock
+{
+  overflow: hidden;
+}
+
+.clock_item
+{
+  float: left;
+  width: 33.33333%;
+  position: relative;
+}
+
+.clock_item:before
+{
+  position: absolute;
+  content: ":";
+  right: -6px;
+  top: -13px;
+  font-size: 3.125rem;
+}
+
+.clock_item:last-child:before
+{
+  display: none;
+}
+
+.clock_value
+{
+  font-size: 2.5rem;
 }

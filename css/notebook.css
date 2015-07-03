@@ -10,4 +10,46 @@
   font-size: 1rem;
 }
 
+
+
+/*
+ * Таймер 1
+ */
+
+.countdown_wrap
+{
+  width: 100%;
+  max-width: 400px;
+}
+
+
+.countdown_wrap:after,
+.countdown_wrap:before
+{
+	width: 418px;
+	height: 255px;
+	left: -22px;
+	top: -15px;
+}
+
+.countdown_head
+{
+  font-size: 1.4rem;
+}
+
+.clock
+{
+	margin: 5px 0;
+}
+
+.clock_value
+{
+	font-size: 3.125rem;
+}
+
+.clock_item:before
+{
+	top: -7px;
+}
+
 } /* <-- Medium devices */

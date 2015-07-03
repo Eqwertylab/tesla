@@ -11,4 +11,30 @@
   padding: 0 15px;
 }
 
+
+
+/*
+ * Таймер 1
+ */
+
+.countdown_wrap:after,
+.countdown_wrap:before
+{
+	width: 447px;
+	height: 273px;
+	left: -24px;
+	top: -16px;
+}
+
+
+.clock
+{
+	margin: 10px 0;
+}
+
+.clock_caption
+{
+	margin-top: 5px;
+}
+
 }  /* <-- Large devices */

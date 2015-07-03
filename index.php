@@ -107,6 +107,33 @@
                     </div>
                   </div>
                 </form>
+                
+                <div class="countdown_wrap">
+                  <div class="countdown">
+
+                    <header class="countdown_head">
+                      До окончания акции осталось:
+                    </header>
+
+                    <div class="clock">
+
+                      <div class="clock_item">
+                        <div class="clock_value" id="hour">06</div>
+                        <div class="clock_caption">часы</div>
+                      </div>
+
+                      <div class="clock_item">
+                        <div class="clock_value" id="minute">34</div>
+                        <div class="clock_caption">минуты</div>
+                      </div>
+                      
+                      <div class="clock_item">
+                        <div class="clock_value" id="second">45</div>
+                        <div class="clock_caption">секунды</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
