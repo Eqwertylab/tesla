@@ -1,13 +1,113 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
 {
-  /*
-   * Верхний блок
-   */
 
-  .top
-  {
-    height: 660px;
-  }
+.section_head
+{
+  font-size: 2.8125rem;
+}
+
+
+
+/*
+ * Заголовок
+ */
+
+.logo
+{
+  margin-top: 18px;
+}
+
+
+
+/*
+ * Верхний блок
+ */
+
+.top
+{
+  height: 660px;
+}
+
+.top_head
+{
+  margin-top: 165px;
+}
+
+
+
+/*
+ * Список с характеристиками
+ */
+
+.specifications
+{
+  background-position: 155% 50%;
+}
+
+
+
+/* 
+ * Манифест
+ */
+
+.maifest_list
+{
+  padding-bottom: 30px;
+}
+
+.maifest_item
+{
+  height: 365px;
+  margin-bottom: 0;
+}
+
+
+
+/* 
+ * FAQ
+ */
+
+.faq_header
+{
+  font-size: 1.375rem;
+  padding: 10px 0 10px 70px;
+}
+
+.faq_header:before
+{
+  line-height: 2.8rem;
+  width: 50px;
+}
+
+.faq_body
+{
+  padding: 10px 15px 10px 70px;
+}
+
+.faq_body:before
+{
+  content: " ";
+  text-align: center;
+  display: block;
+  position: absolute;
+  background-color: #dedaea;
+  color: #4c3498;
+  width: 50px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+
+/*
+ * Преимущества
+ */
+
+.excellence
+{
+  height: 700px;
+}
 
 } /* <-- Small devices */

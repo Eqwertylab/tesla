@@ -61,6 +61,7 @@ body
   margin-bottom: 60px;
 
   text-align: center;
+  position: relative;
 }
 
 .section
@@ -489,6 +490,7 @@ input.base_control
 .btn_wrap .btn
 {
   display: block;
+  white-space: nowrap;
   width: 100%;
   height: 45px;
   border-radius: 5px;
@@ -517,6 +519,12 @@ background: -ms-linear-gradient(top,  #e80000 0%,#f20202 40%,#db0202 100%);
 background: linear-gradient(to bottom,  #e80000 0%,#f20202 40%,#db0202 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', endColorstr='#db0202',GradientType=0 );
 
+}
+
+.top_form .btn_wrap
+{
+  max-width: 236px;
+  margin: auto;
 }
 
 
@@ -610,4 +618,290 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
 .clock_value
 {
   font-size: 2.5rem;
+}
+
+
+
+/*
+ * Список с характеристиками
+ */
+
+.specifications
+{
+  color: #092f69;
+  background-repeat: no-repeat;
+  background-position: -85px 120%;
+  background-image: url(../img/background-specifications.jpg);
+}
+
+.cloud_min
+{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/cloud.png);
+  width: 174px;
+  height: 111px;
+  position: absolute;
+  top: -40px;
+  font-weight: 400;
+  right: 0;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding-top: 46px;
+  padding-left: 55px;
+  text-align: left;
+}
+
+.spec_list
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+.spec_list li
+{
+  margin-top: 40px;
+}
+
+.spec_list li:first-child
+{
+  margin-top: 0;
+}
+
+.spec_list.__right
+{
+  margin-top: 40px;
+}
+
+.spec_ico
+{
+  display: block;
+  padding-left: 70px;
+  position: relative;
+  height: 57px;
+  padding-top: 10px;
+  font-size: 1.1rem;
+  color: #092f69;
+}
+
+.spec_ico:before
+{
+  content: " ";
+  display: block;
+  width: 57px;
+  height: 57px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #325894;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.spec_ico.__alarm:before
+{
+  background-image: url(../img/ico-alarm-clock.png);
+}
+
+.spec_ico.__juice:before
+{
+  background-image: url(../img/ico-juice.png);
+}
+
+.spec_ico.__stop:before
+{
+  background-image: url(../img/ico-stop-watch.png);
+}
+
+.spec_ico.__clipboard:before
+{
+  background-image: url(../img/ico-clipboard-2.png);
+}
+
+.spec_ico.__piano:before
+{
+  background-image: url(../img/ico-piano-keyboard.png);
+}
+
+.spec_ico.__graph:before
+{
+  background-image: url(../img/ico-graph-chart.png);
+}
+
+.spec_ico.__target:before
+{
+  background-image: url(../img/ico-target.png);
+}
+
+.spec_ico.__moon:before
+{
+  background-image: url(../img/ico-moon.png);
+}
+
+.spec_ico.__ball:before
+{
+  background-image: url(../img/ico-rugby-ball.png);
+}
+
+
+
+/* 
+ * Манифест
+ */
+
+.manifest
+{
+  background: #f5f6fa;
+}
+
+.maifest_list
+{
+  text-align: center;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 30px;
+}
+
+.maifest_item
+{
+  height: 250px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.maifest_capton
+{
+  font-size: 1.875rem;
+  font-weight: 100;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.maifest_capton.__ico_wallet
+{
+  background-image: url(../img/ico-wallet.png);
+}
+
+.maifest_capton.__ico_sheriff
+{
+  background-image: url(../img/ico-sheriff.png);
+}
+
+.maifest_capton.__ico_download
+{
+  background-image: url(../img/ico-download.png);
+}
+
+.maifest_capton.__ico_russia
+{
+  background-image: url(../img/ico-russia.png);
+}
+
+.maifest_desc
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 15px;
+}
+
+
+
+/* 
+ * FAQ
+ */
+
+.faq_list
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.faq_item
+{
+  background-color: #f1eaf1;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.faq_header
+{
+  font-size: 1rem;
+  color: #301d6b;
+  position: relative;
+  padding: 5px 0 5px 50px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq_header:before
+{
+  content: "+";
+  text-align: center;
+  display: block;
+  position: absolute;
+  background-color: #dedaea;
+  color: #4c3498;
+  width: 35px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  line-height: 1.6rem;
+}
+
+.__open .faq_header:before
+{
+  content: "-";
+}
+
+.__open .faq_header
+{
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.faq_body
+{
+  padding: 5px 10px;
+  position: relative;
+}
+
+.specifications_order
+{
+  margin-top: 30px;
+} 
+
+.specifications_order .btn_wrap
+{
+  max-width: 326px;
+  margin: auto;
+}
+
+
+
+/*
+ * Преимущества
+ */
+
+.excellence .section_head
+{
+  color: #f68517;
+}
+
+.excellence
+{
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-image: url(../img/background-excellence.jpg);
+}
+
+.ex_list
+{
+  color: #f8983a;
 }

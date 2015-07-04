@@ -57,7 +57,6 @@
       <main class="main">
 
         <section class="section top" id="top">
-
           <div class="container">
             <div class="row">
               <div class="col-sm-7">
@@ -118,17 +117,17 @@
                     <div class="clock">
 
                       <div class="clock_item">
-                        <div class="clock_value" id="hour">06</div>
+                        <div class="clock_value hours" id="hours">06</div>
                         <div class="clock_caption">часы</div>
                       </div>
 
                       <div class="clock_item">
-                        <div class="clock_value" id="minute">34</div>
+                        <div class="clock_value minutes" id="minutes">34</div>
                         <div class="clock_caption">минуты</div>
                       </div>
                       
                       <div class="clock_item">
-                        <div class="clock_value" id="second">45</div>
+                        <div class="clock_value seconds" id="seconds">45</div>
                         <div class="clock_caption">секунды</div>
                       </div>
                     </div>
@@ -138,11 +137,143 @@
             </div>
           </div>
         </section>
+
+        <section class="section specifications" id="specifications">
+          <div class="container">
+            <header class="section_head">
+              Характеристики 
+              <div class="cloud_min hidden-xs tooltip" 
+                title="TeslaWatch T-band работает через приложение для мобильного устройства. <br>
+                        Браслеты работают по протоколу Bluetooth 4.0 и выше. <br>
+                        Приложение рассчитано на iOS (от 7.0) и Android (от 4.3 версии и выше)." >
+                Bluetooth 4.0 <br> 
+                iPhone 4S <br> 
+                Android 4.3
+              </div>
+            </header>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="spec_list __left">
+                  <li><span class="spec_ico __alarm">Умный будильник</span></li>
+                  <li><span class="spec_ico __juice">Сиситема напоминаний <br>о приеме воды</span></li>
+                  <li><span class="spec_ico __stop">Шагомер</span></li>
+                  <li><span class="spec_ico __clipboard">Учет сожженных<br>калорий</span></li>
+                  <li><span class="spec_ico __piano">4 режима работы</span></li>
+                </ul>
+              </div>
+              <div class="col-md-5 col-md-offset-1">
+                <ul class="spec_list __right">
+                  <li><span class="spec_ico __graph">Подробная статистика</span></li>
+                  <li><span class="spec_ico __target">Установка целей в <br>приложении</span></li>
+                  <li><span class="spec_ico __moon">Отслеживание фаз сна</span></li>
+                  <li><span class="spec_ico __ball">Напоминание что нужно <br>размяться</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section manifest" id="manifest">
+          <div class="container">
+
+            <div class="row maifest_list">
+
+              <div class="col-sm-3 maifest_item">
+                <div class="maifest_capton __ico_wallet">Оплата при получении</div>
+                <div class="maifest_desc">Вы платите деньги курьеру при получении браслетов</div>
+              </div>
+
+              <div class="col-sm-3 maifest_item">
+                <div class="maifest_capton __ico_sheriff">100% гарантия возврата</div>
+                <div class="maifest_desc">Мы соблюдаем "Закон о защите прав потребителей”</div>
+              </div>
+
+              <div class="col-sm-3 maifest_item">
+                <div class="maifest_capton __ico_download">Максимально низкая цена</div>
+                <div class="maifest_desc">Мы являемся производителями, поэтому Вы покупаете браслеты без дополнительной наценки</div>
+              </div>
+
+              <div class="col-sm-3 maifest_item">
+                <div class="maifest_capton __ico_russia">Доставка по всей России</div>
+                <div class="maifest_desc">Мы высылаем браслеты во все региона нашей страны</div>
+              </div>
+            </div>
+
+            <ul class="faq_list">
+
+              <li class="faq_item">
+                <header class="faq_header">Принцип работы браслета</header>
+                <div class="faq_body">Современные ученые так объяснили целебные свойства турмалина: энергетические вибрации камня идентичны вибрациям человеческого тела, поэтому способны стимулировать энергетические потоки в теле и могут оказывать регулирующее действие на весь организм человека.</div>
+              </li>
+
+              <li class="faq_item">
+                <header class="faq_header">Почему турмалин стабилизирует биомагнитное поле человека?</header>
+                <div class="faq_body">Современные ученые так объяснили целебные свойства турмалина: энергетические вибрации камня идентичны вибрациям человеческого тела, поэтому способны стимулировать энергетические потоки в теле и могут оказывать регулирующее действие на весь организм человека.</div>
+              </li>
+
+              <li class="faq_item">
+                <header class="faq_header">Почему браслет Teslawatch выводит из организма до 97,5% токсинов?</header>
+                <div class="faq_body">Современные ученые так объяснили целебные свойства турмалина: энергетические вибрации камня идентичны вибрациям человеческого тела, поэтому способны стимулировать энергетические потоки в теле и могут оказывать регулирующее действие на весь организм человека.</div>
+              </li>
+
+              <li class="faq_item">
+                <header class="faq_header">Почему браслет увеличивает рост мышечной массы в три раза?</header>
+                <div class="faq_body">Современные ученые так объяснили целебные свойства турмалина: энергетические вибрации камня идентичны вибрациям человеческого тела, поэтому способны стимулировать энергетические потоки в теле и могут оказывать регулирующее действие на весь организм человека.</div>
+              </li>
+            </ul>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4  center-block specifications_order">
+                <div class="btn_wrap">
+                    <button class="btn __order">Хочу такой браслет</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section excellence" id="excellence">
+          <div class="container">
+            <header class="section_head">Преимущества T-BAND</header>
+
+            <ul class="ex_list __type_1 __center">
+              <li class="ex_item __ico_nautical">Долговечность</li>
+              <li class="ex_item __ico_tie">Лаконичный дизайн</li>
+              <li class="ex_item __ico_smile">Удобный браслет</li>
+            </ul>
+
+            <ul class="ex_list __type_2 __left">
+              <li class="ex_item __ico_piggy">Цена ниже аналогов</li>
+              <li class="ex_item __ico_mute">Будит только Вас</li>
+              <li class="ex_item __ico_settings">Российское производство</li>
+            </ul>
+
+            <ul class="ex_list __type_2 __right">
+              <li class="ex_item __ico_battery">Автономность</li>
+              <li class="ex_item __ico_iphone">Совместимость</li>
+              <li class="ex_item __ico_graduate">Действительно умный будильник</li>
+            </ul>
+
+            <svg class="hexagon" style="height: 220px;">
+              <polygon points="70.444,218.89 15.444,118.89 70.444,18.89 180.444,18.89 235.444,118.89 
+              180.444,218.89" fill="rgba(0,0,0,0)" stroke-width="1" stroke="rgb(0,0,0)"/> 
+            </svg>
+
+            <script>
+              $(".hexagon").hover(function() {
+                $(this).
+
+              }, function() {
+                
+              });
+            </script>
+          </div>
+        </section>
       </main>
     </div>
     <footer class="footer">
       <div class="container">
-
+        
       </div>
     </footer>
   </div>
@@ -150,6 +281,8 @@
   <script src="js/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="js/jquery-validation/dist/localization/messages_ru.min.js"></script>
   <script src="js/jquery-validation/dist/additional-methods.min.js"></script>
+  <script src="js/countdown.min.js"></script>
+  <script src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

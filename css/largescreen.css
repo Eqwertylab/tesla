@@ -11,6 +11,33 @@
   padding: 0 15px;
 }
 
+.logo
+{
+  margin-top: 10px;
+}
+
+
+
+/*
+ * Верхний блок
+ */
+
+.top_head
+{
+	margin-top: 145px;
+	font-size: 2.45rem;
+}
+
+
+/*
+ * Дескриптор
+ */
+
+.top_desc_title
+{
+	font-size: 1.4375rem;
+}
+
 
 
 /*
@@ -36,5 +63,27 @@
 {
 	margin-top: 5px;
 }
+
+
+
+/*
+ * Список с характеристиками
+ */
+
+.spec_ico
+{
+	font-size: 1.5rem;
+}
+
+
+
+/* 
+ * Манифест
+ */
+.maifest_item
+{
+  height: 275px;
+}
+
 
 }  /* <-- Large devices */
