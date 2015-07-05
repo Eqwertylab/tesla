@@ -186,4 +186,34 @@
 }
 
 
+
+/*
+ * Преимущества
+ */
+
+.ex_list.__type_2,
+.ex_list.__type_3
+{
+  top: 320px;
+}
+
+.ex_list.__type_2 .ex_item:nth-child(1),
+.ex_list.__type_2 .ex_item:nth-child(2)
+{
+  margin-left: 129px;
+}
+
+.ex_list.__type_3 .ex_item:nth-child(1),
+.ex_list.__type_3 .ex_item:nth-child(2)
+{
+  margin-left: -129px;
+}
+
+.ex_list.__type_2 .ex_item:nth-child(3),
+.ex_list.__type_3 .ex_item:nth-child(3)
+{
+  margin-top: -220px;
+}
+
+
 } /* <-- Medium devices */

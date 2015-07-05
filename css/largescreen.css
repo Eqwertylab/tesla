@@ -86,4 +86,20 @@
 }
 
 
+
+/*
+ * Преимущества
+ */
+
+.ex_list.__type_2 
+{
+	left: 100px;
+}
+
+.ex_list.__type_3
+{
+  right: 100px;
+}
+
+
 }  /* <-- Large devices */

@@ -11,6 +11,7 @@ App = {
       App.Fn.init_countdown();
       App.Fn.init_tooltip();
       App.Fn.faq();
+      App.Fn.hexagon();
     })
   },
 
@@ -91,7 +92,21 @@ App = {
           wrap.addClass('__open').find('.faq_body').slideDown();
         }
       });
+    },
 
+    hexagon: function() {
+
+      $('.hexagon g').hover(function() {
+
+        var desc_id = $(this).closest('.ex_item').addClass('__hover').data('descid');
+        $('.ex_inner').removeClass('__active zoomIn animated');
+        $('.ex_inner[data-desc="'+desc_id+'"]').addClass('__active zoomIn animated');
+      }, function() {
+
+        $(this).closest('.ex_item').removeClass('__hover');
+        $('.ex_inner').removeClass('__active zoomIn animated');
+        $('.ex_inner.__image').addClass('__active zoomIn animated');
+      });
     }
   }
 }

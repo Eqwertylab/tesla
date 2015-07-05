@@ -236,37 +236,177 @@
           <div class="container">
             <header class="section_head">Преимущества T-BAND</header>
 
-            <ul class="ex_list __type_1 __center">
-              <li class="ex_item __ico_nautical">Долговечность</li>
-              <li class="ex_item __ico_tie">Лаконичный дизайн</li>
-              <li class="ex_item __ico_smile">Удобный браслет</li>
+            <ul class="ex_list __type_1">
+
+              <li class="ex_item" data-descid="1">
+                <svg class="hexagon">
+                  <g>
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-nautical.png"/>
+                    <text x="85" y="90" text-anchor="middle">Долговечность</text>
+                  </g>
+                </svg>
+              </li>
+
+              <li class="ex_item __mob_right" data-descid="2">
+                <svg class="hexagon">
+                  <g>
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-tie.png"/>
+                    <text x="85" y="90" text-anchor="middle">Лаконичный</text>
+                    <text x="85" y="110" text-anchor="middle">дизайн</text>
+                  </g>
+                </svg>
+              </li>
+
+              <li class="ex_item __mob_left" data-descid="3">
+                <svg class="hexagon">
+                  <g data-ex-id="1">
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-smile.png"/>
+                    <text x="85" y="90" text-anchor="middle">Удобный</text>
+                    <text x="85" y="110" text-anchor="middle">браслет</text>
+                  </g>
+                </svg>
+              </li>
             </ul>
 
-            <ul class="ex_list __type_2 __left">
-              <li class="ex_item __ico_piggy">Цена ниже аналогов</li>
-              <li class="ex_item __ico_mute">Будит только Вас</li>
-              <li class="ex_item __ico_settings">Российское производство</li>
+            <ul class="ex_list __type_2">
+
+              <li class="ex_item __mob_right" data-descid="4">
+                <svg class="hexagon">
+                  <g data-ex-id="1">
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-piggy.png"/>
+                    <text x="85" y="90" text-anchor="middle">Цена ниже</text>
+                    <text x="85" y="110" text-anchor="middle">аналогов</text>
+                  </g>
+                </svg>
+              </li>
+
+              <li class="ex_item __mob_left" data-descid="5">
+                <svg class="hexagon">
+                  <g data-ex-id="1">
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-mute.png"/>
+                    <text x="85" y="90" text-anchor="middle">Будит</text>
+                    <text x="85" y="110" text-anchor="middle">только Вас</text>
+                  </g>
+                </svg>
+              </li>
+
+              <li class="ex_item __mob_right" data-descid="6">
+                <svg class="hexagon">
+                  <g data-ex-id="1">
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-settings.png"/>
+                    <text x="85" y="90" text-anchor="middle">Российское</text>
+                    <text x="85" y="110" text-anchor="middle">производство</text>
+                  </g>
+                </svg>
+              </li>
             </ul>
 
-            <ul class="ex_list __type_2 __right">
-              <li class="ex_item __ico_battery">Автономность</li>
-              <li class="ex_item __ico_iphone">Совместимость</li>
-              <li class="ex_item __ico_graduate">Действительно умный будильник</li>
+            <ul class="ex_list __type_3">
+
+              <li class="ex_item __mob_left" data-descid="7">
+                <svg class="hexagon">
+                  <g data-ex-id="1">
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-battery.png"/>
+                    <text x="85" y="90" text-anchor="middle">Автономность</text>
+                  </g>
+                </svg>
+              </li>
+
+              <li class="ex_item __mob_right" data-descid="8">
+                <svg class="hexagon">
+                  <g data-ex-id="1">
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-iphone.png"/>
+                    <text x="85" y="90" text-anchor="middle">Совместимость</text>
+                  </g>
+                </svg>
+              </li>
+
+              <li class="ex_item __mob_left" data-descid="9">
+                <svg class="hexagon">
+                  <g data-ex-id="1">
+                    <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
+                    <image x="60" y="20" xlink:href="img/ico-graduate.png"/>
+                    <text x="85" y="90" text-anchor="middle">Действительно</text>
+                    <text x="85" y="110" text-anchor="middle">умный</text>
+                    <text x="85" y="130" text-anchor="middle">будильник</text>
+                  </g>
+                </svg>
+              </li>
             </ul>
 
-            <svg class="hexagon" style="height: 220px;">
-              <polygon points="70.444,218.89 15.444,118.89 70.444,18.89 180.444,18.89 235.444,118.89 
-              180.444,218.89" fill="rgba(0,0,0,0)" stroke-width="1" stroke="rgb(0,0,0)"/> 
-            </svg>
+            <div class="ex_description">
+              
+              <div class="ex_inner __image __active"></div>
 
-            <script>
-              $(".hexagon").hover(function() {
-                $(this).
+              <div class="ex_inner __text" data-desc="1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
 
-              }, function() {
+              <div class="ex_inner __text" data-desc="2">
+                Nostrum nihil aut voluptates ab facilis similique est facere quas rem vel impedit, corrupti quasi beatae enim tenetur fugiat.
+              </div>
+
+              <div class="ex_inner __text" data-desc="3">
+                Facere quas rem vel impedit, corrupti quasi beatae enim tenetur fugiat.
+              </div>
+
+              <div class="ex_inner __text" data-desc="4">
+                Nihil aut voluptates ab facilis similique est facere
+              </div>
+
+              <div class="ex_inner __text" data-desc="5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+
+              <div class="ex_inner __text" data-desc="6">
+                Nostrum nihil aut voluptates ab facilis similique est facere quas rem vel impedit, corrupti quasi beatae enim tenetur fugiat.
+              </div>
+
+              <div class="ex_inner __text" data-desc="7">
+                Facere quas rem vel impedit, corrupti quasi beatae enim tenetur fugiat.
+              </div>
+
+              <div class="ex_inner __text" data-desc="8">
+                Nihil aut voluptates ab facilis similique est facere
+              </div>
+
+              <div class="ex_inner __text" data-desc="9">
+                Nihil aut voluptates ab facilis similique est facere
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section promo" id="promo">
+          <div class="container">
+            <div class="section_head">
+              До конца акции
+              <div class="clock">
+
+                <div class="clock_item">
+                  <div class="clock_value hours" id="hours">06</div>
+                  <div class="clock_caption">часы</div>
+                </div>
+
+                <div class="clock_item">
+                  <div class="clock_value minutes" id="minutes">34</div>
+                  <div class="clock_caption">минуты</div>
+                </div>
                 
-              });
-            </script>
+                <div class="clock_item">
+                  <div class="clock_value seconds" id="seconds">45</div>
+                  <div class="clock_caption">секунды</div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

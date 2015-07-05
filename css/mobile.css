@@ -23,7 +23,7 @@ body
 
   position: relative;
 
-  color: #301d6b;
+  color: #242424;
   background: #ffffff;
 }
 
@@ -828,6 +828,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
   border-radius: 6px;
   overflow: hidden;
   margin-top: 2px;
+  position: relative;
+  z-index: 100;
 }
 
 .faq_header
@@ -853,6 +855,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
   top: 0;
   bottom: 0;
   line-height: 1.6rem;
+  z-index: 50;
 }
 
 .__open .faq_header:before
@@ -888,6 +891,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
  * Преимущества
  */
 
+.excellence .container
+{
+  position: relative;
+}
+
 .excellence .section_head
 {
   color: #f68517;
@@ -904,4 +912,101 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
 .ex_list
 {
   color: #f8983a;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 290px;
+  margin: auto;
+}
+
+.hexagon
+{
+  height: 144px;
+  width: 167px;
+}
+
+.hexagon g {
+  cursor: pointer;
+}
+
+.hexagon polygon
+{
+  fill: rgba(0,0,0,1);
+  stroke: rgb(0,0,0);
+  stroke-width: 1;
+
+  transition: all 0.3s;
+}
+
+.ex_item.__hover polygon
+{
+  fill: rgba(0,0,0,0.5);
+}
+
+.hexagon image
+{
+  width: 47px;
+  height: 47px;
+}
+
+.hexagon text
+{
+  font-size: 1rem;
+  font-family: 'Exo 2', sans-serif;
+  fill: #f8983a;
+}
+
+.ex_item.__mob_right
+{
+  margin: -70px 0 0 133px;  
+}
+
+.ex_item.__mob_left
+{
+  margin: -70px 0 0 0;  
+}
+
+.ex_description
+{
+  position: absolute;
+  width: 296px;
+  height: 178px;
+  top: 375px;
+  left: 50%;
+  margin-left: -143px;
+  display: none;
+}
+
+.ex_inner
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.ex_inner.__image
+{
+  background: url(../img/tesla.png) no-repeat center center;
+}
+
+.ex_inner.__text
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/ex_desc_bg.png) no-repeat center top;
+  padding: 55px 25px 0;
+  text-align: center;
+}
+
+.ex_inner.__active
+{
+  opacity: 1;
 }
