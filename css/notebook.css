@@ -216,4 +216,35 @@
 }
 
 
+
+/*
+ * Акция
+ */
+
+.promo_desc
+{
+  padding-bottom: 60px;
+}
+
+/*
+ * Подарок
+ */ 
+ 
+.gift
+{
+  float: left;
+  max-width: 100%;
+  padding: 5px 0 0 195px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.gift:before
+{
+  right: auto;
+  left: 175px;
+  bottom: -25px;
+}
+
+
 } /* <-- Medium devices */

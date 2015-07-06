@@ -589,6 +589,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
   font-weight: 600;
 }
 
+.clock_caption
+{
+  font-size: 1rem;
+}
+
 .clock
 {
   overflow: hidden;
@@ -1009,4 +1014,77 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
 .ex_inner.__active
 {
   opacity: 1;
+}
+
+
+
+/*
+ * Акция
+ */
+
+.promo
+{
+  color: #092f69;
+}
+
+.promo_desc
+{
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+ /*
+ * Таймер 2
+ */
+
+.section_head .clock
+{
+  margin-top: 15px;
+  max-width: 320px;
+  margin: auto;
+}
+
+.section_head .clock_item:before
+{
+  top: -7px;
+}
+
+.promo .price_table
+{
+  color: #092f69;
+}
+
+
+
+/*
+ * Подарок
+ */ 
+
+.gift
+{
+  position: relative;
+  max-width: 272px;
+  margin: 30px auto 0;
+  font-size: 1.2rem;
+  height: 280px;
+  text-align: center;
+  background: url(../img/tesla-box.jpg) no-repeat -50px bottom;
+}
+
+.gift:before
+{
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  right: 0;
+  bottom: 0;
+  background: #ffffff url(../img/chehol.jpg) no-repeat center center;
+  background-size: 100px;
+  border-radius: 100%;
+  border: 1px solid #ff0000;
 }

@@ -167,4 +167,43 @@
   display: block;
 }
 
+
+
+/*
+ * Акция
+ */
+
+
+
+ /*
+ * Таймер 2
+ */
+
+.section_head .clock
+{
+  display: inline-block;
+  width: 320px;
+  vertical-align: top;
+}
+
+.promo .price_table
+{
+  margin-top: 40px;
+}
+
+
+
+/*
+ * Подарок
+ */ 
+ 
+.gift
+{
+  margin: 0 auto;
+  height: 265px;
+}
+
+
+
+
 } /* <-- Small devices */

@@ -77,7 +77,7 @@ App = {
 
     faq: function() {
 
-      $('.faq_item:first').addClass('__open');
+      $('.faq_item:first-child').addClass('__open');
       $('.faq_body').not('.faq_item:first-child .faq_body').css('display', 'none');
 
       $('.faq_header').click(function() {
