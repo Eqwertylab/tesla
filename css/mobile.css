@@ -1126,3 +1126,165 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
 .promo_form .base_control:focus::-moz-placeholder          {color: transparent}
 .promo_form .base_control:focus:-moz-placeholder           {color: transparent}
 .promo_form .base_control:focus:-ms-input-placeholder      {color: transparent}
+
+
+
+/*
+ * Отзывы
+ */
+
+.review
+{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/background-review.jpg);
+  background-size: cover;
+}
+
+.rev_body
+{
+  padding: 20px;
+  border-radius: 25px;
+  margin: auto;
+  max-width: 600px;
+
+  box-shadow: -4px 5px 20px rgba(0,0,0,0.14);
+
+  background: rgb(241,241,241);
+background: -moz-linear-gradient(top,  rgba(241,241,241,1) 0%, rgba(196,196,196,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,241,241,1)), color-stop(100%,rgba(196,196,196,1)));
+background: -webkit-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(196,196,196,1) 100%);
+background: -o-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(196,196,196,1) 100%);
+background: -ms-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(196,196,196,1) 100%);
+background: linear-gradient(to bottom,  rgba(241,241,241,1) 0%,rgba(196,196,196,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#c4c4c4',GradientType=0 );
+}
+
+.rev_desc
+{
+  overflow: hidden;
+}
+
+.rev_photo
+{
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.rev_name
+{
+  font-size: 1.5rem;
+  color: #242424;
+  margin-bottom: 10px;
+}
+
+.rev_post
+{
+  font-size: 0.875rem;
+  color: #616161;
+  margin-bottom: 10px;
+}
+
+.rev_text
+{
+  color: #242424;
+}
+
+.slider 
+{
+  position: relative;
+  height: 340px;
+  padding: 0 15px;
+}
+
+.slides, .control_nav, .direction_nav 
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+} 
+
+.slides 
+{
+  position: relative;
+  height: 100%;
+}
+
+.slide 
+{
+  transition: opacity 0.5s;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+
+.slide.active 
+{
+  opacity: 1;
+}
+
+.direction_nav 
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.direction_nav li 
+{
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.direction_nav li:before
+{
+  content: " ";
+  width: 92px;
+  height: 92px;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.direction_nav li:hover 
+{
+    opacity: 1;
+}
+
+.direction_nav .before 
+{
+  background-position: left top;
+  left: 0;
+  top: 0;
+}
+
+.direction_nav .before:before
+{
+  left: 15px;
+  top: 25px;
+  background-image: url(../img/slider-arrow-left.png);
+}
+
+.direction_nav .next 
+{
+  background-position: right top;
+  right: 0;
+  top: 0;
+}
+
+.direction_nav .next:before
+{
+  right: 20px;
+  top: 25px;
+  background-image: url(../img/slider-arrow-right.png);
+}

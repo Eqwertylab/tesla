@@ -477,13 +477,51 @@
         </section>
 
         <section class="section review" id="review">
-          
+          <header class="section_head">Отзывы пользователей</header>
+          <div class="slider">
+
+            <div class="rev_list slides">
+
+              <div class="rev_item slide active">
+                <div class="rev_body">
+                  <div class="rev_photo">
+                    <img src="img/rev1.jpg" alt="">
+                  </div>
+                  <div class="rev_desc">
+                    <div class="rev_name">Шеповалов Максим</div>
+                    <div class="rev_post">Админстратор ночного клуба</div>
+                    <div class="rev_text">Praesent quis neque pharetra, dignissim risus eu, finibus arcu. Nulla eu malesuada mi, at tempor augue. In vitae ipsum id neque rutrum luctus at id nibh. Mauris mi ante, fermentum a mollis eu, sollicitudin non odio. Vivamus pulvinar eros non velit posuere tristique. Suspendisse sollicitudin tincidunt suscipit. </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rev_item slide">
+                <div class="rev_body">
+                  <div class="rev_photo">
+                    <img src="img/rev1.jpg" alt="">
+                  </div>
+                  <div class="rev_desc">
+                    <div class="rev_name">Сергей Бодров</div>
+                    <div class="rev_post">Админстратор ночного клуба</div>
+                    <div class="rev_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium deserunt in officia, aperiam saepe dolorum, voluptas at sint dicta magnam a sunt adipisci dolore, aliquid ea mollitia? Ad, deserunt, perferendis.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container direction_nav_wrap">
+              <ul class="direction_nav">
+                <li class="before"></li>
+                <li class="next"></li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
     </div>
+
     <footer class="footer">
       <div class="container">
-        <header class="section_head">Отзывы пользователей</header>
         
       </div>
     </footer>
@@ -494,6 +532,7 @@
   <script src="js/jquery-validation/dist/additional-methods.min.js"></script>
   <script src="js/countdown.min.js"></script>
   <script src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
+  <!--script src="js/fotorama/fotorama.js"></script-->
   <script src="js/app.js"></script>
 </body>
 </html>

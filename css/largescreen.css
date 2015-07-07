@@ -112,4 +112,20 @@
 }
 
 
+
+/*
+ * Отзывы
+ */
+
+.direction_nav .before:before
+{
+  left: 30%;
+}
+
+.direction_nav .next:before
+{
+  right: 30%;
+}
+
+
 }  /* <-- Large devices */
