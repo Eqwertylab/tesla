@@ -532,7 +532,6 @@
   <script src="js/jquery-validation/dist/additional-methods.min.js"></script>
   <script src="js/countdown.min.js"></script>
   <script src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
-  <!--script src="js/fotorama/fotorama.js"></script-->
   <script src="js/app.js"></script>
 </body>
 </html>
