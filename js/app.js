@@ -83,12 +83,14 @@ App = {
       $('.faq_header').click(function() {
         
         var wrap = $(this).closest('.faq_item');
+        var mega_wrap = wrap.closest('.faq_list');
 
         if(!wrap.hasClass('__open')) {
 
-          $('.faq_item').removeClass('__open');
+          mega_wrap.find('.faq_item').removeClass('__open');
 
-          $('.faq_body').slideUp();
+          mega_wrap.find('.faq_body').slideUp();
+          
           wrap.addClass('__open').find('.faq_body').slideDown();
         }
       });

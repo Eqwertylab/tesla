@@ -475,10 +475,15 @@
             </ul>
           </div>
         </section>
+
+        <section class="section review" id="review">
+          
+        </section>
       </main>
     </div>
     <footer class="footer">
       <div class="container">
+        <header class="section_head">Отзывы пользователей</header>
         
       </div>
     </footer>
