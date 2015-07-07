@@ -316,6 +316,7 @@ textarea.base_control
   color: #6a8294;
   border: 1px solid #ebebeb;
   outline: none;
+  font-size: 1rem;
 }
 
 select.base_control,
@@ -948,12 +949,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
   fill: rgba(0,0,0,0.5);
 }
 
-.hexagon image
-{
-  width: 47px;
-  height: 47px;
-}
-
 .hexagon text
 {
   font-size: 1rem;
@@ -1029,8 +1024,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
 
 .promo_desc
 {
-  border-bottom: 1px solid #d2d2d2;
-  margin-bottom: 30px;
   padding-bottom: 30px;
 }
 
@@ -1088,3 +1081,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80000', end
   border-radius: 100%;
   border: 1px solid #ff0000;
 }
+
+
+/*
+ * Форма 2
+ */
+
+.promo_form
+{
+  border-bottom: 1px solid #d2d2d2;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 0;
+}
+
+.promo_form_inner
+{
+  max-width: 470px;
+  margin:auto;
+}
+
+.promo_form .form_item
+{
+  margin-bottom: 25px;
+}
+
+.promo_form .btn.__order
+{
+  height: auto;
+  white-space: normal;
+}
+
+.promo_form .base_control
+{
+  border-color: #092f69;
+}
+
+.promo_form .base_control::-webkit-input-placeholder {color:#496ea5;}
+.promo_form .base_control::-moz-placeholder          {color:#496ea5;}
+.promo_form .base_control:-moz-placeholder           {color:#496ea5;}
+.promo_form .base_control:-ms-input-placeholder      {color:#496ea5;}
+
+.promo_form .base_control:focus::-webkit-input-placeholder {color: transparent}
+.promo_form .base_control:focus::-moz-placeholder          {color: transparent}
+.promo_form .base_control:focus:-moz-placeholder           {color: transparent}
+.promo_form .base_control:focus:-ms-input-placeholder      {color: transparent}

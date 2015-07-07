@@ -205,5 +205,32 @@
 
 
 
+/*
+ * Форма 2
+ */
+
+.promo_form_inner
+{
+  max-width: 1045px;
+}
+
+.promo_form .form_item
+{
+  margin-bottom: 0px;
+  width: 27%;
+  padding-right: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.promo_form .btn_wrap
+{
+  width: 46%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
 
 } /* <-- Small devices */

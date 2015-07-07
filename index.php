@@ -242,7 +242,7 @@
                 <svg class="hexagon">
                   <g>
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-nautical.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-nautical.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Долговечность</text>
                   </g>
                 </svg>
@@ -252,7 +252,7 @@
                 <svg class="hexagon">
                   <g>
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-tie.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-tie.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Лаконичный</text>
                     <text x="85" y="110" text-anchor="middle">дизайн</text>
                   </g>
@@ -263,7 +263,7 @@
                 <svg class="hexagon">
                   <g data-ex-id="1">
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-smile.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-smile.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Удобный</text>
                     <text x="85" y="110" text-anchor="middle">браслет</text>
                   </g>
@@ -277,7 +277,7 @@
                 <svg class="hexagon">
                   <g data-ex-id="1">
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-piggy.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-piggy.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Цена ниже</text>
                     <text x="85" y="110" text-anchor="middle">аналогов</text>
                   </g>
@@ -288,7 +288,7 @@
                 <svg class="hexagon">
                   <g data-ex-id="1">
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-mute.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-mute.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Будит</text>
                     <text x="85" y="110" text-anchor="middle">только Вас</text>
                   </g>
@@ -299,7 +299,7 @@
                 <svg class="hexagon">
                   <g data-ex-id="1">
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-settings.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-settings.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Российское</text>
                     <text x="85" y="110" text-anchor="middle">производство</text>
                   </g>
@@ -313,7 +313,7 @@
                 <svg class="hexagon">
                   <g data-ex-id="1">
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-battery.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-battery.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Автономность</text>
                   </g>
                 </svg>
@@ -323,7 +323,7 @@
                 <svg class="hexagon">
                   <g data-ex-id="1">
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-iphone.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-iphone.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Совместимость</text>
                   </g>
                 </svg>
@@ -333,7 +333,7 @@
                 <svg class="hexagon">
                   <g data-ex-id="1">
                     <polygon points="41, 0 125, 0 166, 72 125, 143  41, 143 0, 72" /> 
-                    <image x="60" y="20" xlink:href="img/ico-graduate.png"/>
+                    <image x="60" y="20" xlink:href="img/ico-graduate.png" width="47" height="47"/>
                     <text x="85" y="90" text-anchor="middle">Действительно</text>
                     <text x="85" y="110" text-anchor="middle">умный</text>
                     <text x="85" y="130" text-anchor="middle">будильник</text>
@@ -433,6 +433,23 @@
                 <div class="gift">Чехол для бега в подарок!</div>
               </div>
             </div>
+
+            <form action="" class="promo_form">
+              <div class="promo_form_inner">
+
+                <div class="form_item">
+                  <input type="text" name="name" placeholder="Ваше имя" class="base_control">
+                </div>
+
+                <div class="form_item">
+                  <input type="text" name="phone" placeholder="Телефон" class="base_control">
+                </div>
+
+                <div class="btn_wrap">
+                  <button class="btn __order">Заказать браслет с подарком</button>
+                </div>
+              </div>
+            </form>
 
             <ul class="faq_list">
 
