@@ -5,6 +5,7 @@
 .section_head
 {
   font-size: 2.8125rem;
+  line-height: 3.2rem;
 }
 
 
@@ -272,5 +273,44 @@
   margin-top: -46px;
 }
 
+
+
+/*
+ * Как мы работаем
+ */
+
+.work_caption
+{
+  font-size: 1.5rem;
+}
+
+
+
+/*
+ * Шесть причин
+ */
+
+.whywe_list
+{
+  font-size: 0;
+}
+
+.whywe_item
+{
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.whywe_item:nth-child(5) 
+{
+  margin-bottom: 0;
+}
+
+
+.whywe_body
+{
+  font-size: 1rem;
+}
 
 } /* <-- Small devices */

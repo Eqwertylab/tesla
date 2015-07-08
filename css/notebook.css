@@ -249,4 +249,87 @@
 }
 
 
+
+/*
+ * Как мы работаем
+ */
+
+.work_caption
+{
+  text-align: center;
+  padding: 0;
+}
+
+.work_item
+{
+  float: left;
+  width: 25%;
+}
+
+.work_item.__asc
+{
+  padding-bottom: 75px;
+}
+
+.work_item.__desc
+{
+  padding-top: 75px;
+  margin-top: 30px;
+}
+
+.work_item:before
+{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 37px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 140px 37px; 
+  right: -70px;
+}
+
+.work_item.__arrow_up:before
+{
+  top: 44px;
+  background-image: url(../img/arrow-to-up.png);
+}
+
+.work_item.__arrow_down:before
+{
+  top: 17px;
+  background-image: url(../img/arrow-to-bottom.png);
+}
+
+.work_ico
+{
+  left: 50%;
+  margin-left: -31.5px;
+}
+
+.__asc .work_ico
+{
+  top: auto;
+  bottom: 0;
+}
+
+.__desc .work_ico
+{
+  bottom: auto;
+  top: 0;
+}
+
+
+
+/*
+ * Шесть причин
+ */
+
+.whywe_item:nth-child(4) 
+{
+  margin-bottom: 0;
+}
+
+
 } /* <-- Medium devices */

@@ -118,7 +118,7 @@ App = {
           count = $slides_arr.size(),                         // кол-во слайдов
           idx = 1,                                            // счетчик слайдов
           SLIDER_DELAY = 5000,                                // заджержка
-          SLIDER_DELAY_CLICK = 8000,                          // заджержка при клике
+          SLIDER_DELAY_CLICK = 10000,                          // заджержка при клике
           timer,                                              // указатель на таймер
           $control = $('.control_nav').find('li'),            // выбор слайда
           idx_control,                                        // внутрений счетчик для выбора слайда

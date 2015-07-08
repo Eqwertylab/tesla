@@ -509,7 +509,7 @@
               </div>
             </div>
 
-            <div class="container direction_nav_wrap">
+            <div class="direction_nav_wrap">
               <ul class="direction_nav">
                 <li class="before"></li>
                 <li class="next"></li>
@@ -517,12 +517,86 @@
             </div>
           </div>
         </section>
+
+        <section class="section work">
+          <div class="container">
+            <header class="section_head">Как мы работаем</header>
+
+            <ul class="work_list">
+
+              <li class="work_item __asc __arrow_up">
+                <div class="work_caption">Оставляете заявку</div>
+                <div class="work_ico __shape"></div>
+              </li>
+
+              <li class="work_item __desc __arrow_down">
+                <div class="work_caption">Звонит менеджер для подтверждения заказа</div>
+                <div class="work_ico __tel"></div>
+              </li>
+
+              <li class="work_item __asc __arrow_up">
+                <div class="work_caption">Отправляем</div>
+                <div class="work_ico __vespa"></div>
+              </li>
+
+              <li class="work_item __desc">
+                <div class="work_caption">Получаете и оплачиваете</div>
+                <div class="work_ico __hand"></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section whywe">
+          <div class="container">
+
+            <header class="section_head"><span>Шесть причин заказать браслет TESLAWATCH у нас</span></header>
+
+            <div class="row whywe_list">
+              
+              <div class="col-sm-6 col-md-4 whywe_item">
+                <div class="whywe_head">Мы производители</div>
+                <div class="whywe_body">Curabitur ut lorem semper, dictum arcu quis, ultrices quam. Fusce a felis aliquet, rhoncus ipsum ac, porta orci. Donec consequat tortor ipsum, non elementum nisl laoreet quis.</div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 whywe_item">
+                <div class="whywe_head">100% гарантия возврата и обмена</div>
+                <div class="whywe_body">Curabitur ut lorem semper, dictum arcu quis, ultrices quam. Fusce a felis aliquet, rhoncus ipsum ac, porta orci. Donec consequat tortor ipsum, non elementum nisl laoreet quis.</div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 whywe_item">
+                <div class="whywe_head">Уведомляем о приходе посылки</div>
+                <div class="whywe_body">Curabitur ut lorem semper, dictum arcu quis, ultrices quam. Fusce a felis aliquet, rhoncus ipsum ac, porta orci. Donec consequat tortor ipsum, non elementum nisl laoreet quis.</div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 whywe_item">
+                <div class="whywe_head">Бесплатный обмен</div>
+                <div class="whywe_body">Curabitur ut lorem semper, dictum arcu quis, ultrices quam. Fusce a felis aliquet, rhoncus ipsum ac, porta orci. Donec consequat tortor ipsum, non elementum nisl laoreet quis.</div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 whywe_item">
+                <div class="whywe_head">Оплата при получении</div>
+                <div class="whywe_body">Curabitur ut lorem semper, dictum arcu quis, ultrices quam. Fusce a felis aliquet, rhoncus ipsum ac, porta orci. Donec consequat tortor ipsum, non elementum nisl laoreet quis.</div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 whywe_item">
+                <div class="whywe_head">Работаем по всей РФ</div>
+                <div class="whywe_body">Curabitur ut lorem semper, dictum arcu quis, ultrices quam. Fusce a felis aliquet, rhoncus ipsum ac, porta orci. Donec consequat tortor ipsum, non elementum nisl laoreet quis.</div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 
-    <footer class="footer">
-      <div class="container">
+    <footer class="section footer">
+      <div class="footer_container">
         
+        <div class="ftels">
+          <a href="#" class="footer_logo"></a>
+          <div class="ftels_item">8 (800) 123 45 67</div>
+          <div class="ftels_item">8 (495) 987 65 12</div>
+        </div>
       </div>
     </footer>
   </div>

@@ -29,7 +29,8 @@ body
 
 .footer
 {
-  background: #383838;
+  background: #2f2f2f;
+  color: #ffffff;
 }
 
 .wrapper
@@ -1288,3 +1289,149 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', end
   top: 25px;
   background-image: url(../img/slider-arrow-right.png);
 }
+
+
+
+/*
+ * Как мы работаем
+ */
+
+.work
+{
+  background: #f5f6fa;
+}
+
+.work_list
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.work_item
+{
+  position: relative;
+  min-height: 63px;
+  margin-bottom: 20px;
+}
+
+.work_caption
+{
+  padding: 15px 0 0 75px;
+  font-size: 1.3rem;
+  color: #242424;
+}
+
+.work_ico
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 63px;
+  height: 63px;
+  border: 1px solid #69a3de;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.work_ico.__hand
+{
+  background-image: url(../img/ico-hand.png);
+}
+
+.work_ico.__vespa
+{
+  background-image: url(../img/ico-vespa.png);
+}
+
+.work_ico.__tel
+{
+  background-image: url(../img/ico-tel.png);
+}
+
+.work_ico.__shape
+{
+  background-image: url(../img/ico-shape.png);
+}
+
+
+
+/*
+ * Шесть причин
+ */
+
+.whywe .section_head span
+{
+  display: block;
+  max-width: 590px;
+  margin: auto;
+}
+
+.whywe
+{
+  color: #fff;
+  background: url(../img/background-whywe.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.whywe_list
+{
+  counter-reset: item;
+}
+
+.whywe_item:before
+{
+  content: counter(item); 
+  counter-increment: item;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.whywe_item
+{
+  margin-bottom: 60px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.whywe_item:nth-child(6) 
+{
+  margin-bottom: 0;
+}
+
+.whywe_head
+{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+
+
+/*
+ * Футер
+ */
+
+.footer_container
+{
+  padding: 0 15px;
+  max-width: 1325px;
+  margin: auto;
+}
+
+.footer_logo
+{
+  
+}
+
