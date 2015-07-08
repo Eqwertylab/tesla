@@ -10,6 +10,7 @@ App = {
       App.Fn.sidebar_mob();
       App.Fn.init_countdown();
       App.Fn.init_tooltip();
+      App.Fn.init_smooth_scroll();
       App.Fn.faq();
       App.Fn.hexagon();
       App.Fn.review();
@@ -19,6 +20,13 @@ App = {
 
   
   Fn: {
+    init_smooth_scroll: function() {
+
+      $('.header_mob a, .header a, .menu_mob a').smoothScroll({
+         offset: -40,
+         scrollElement: $('.wrapper')
+      });
+    },
     
     sidebar_mob: function() {
 

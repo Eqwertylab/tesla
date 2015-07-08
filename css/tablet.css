@@ -8,6 +8,11 @@
   line-height: 3.2rem;
 }
 
+.main
+{
+  padding-top: 40px;
+}
+
 
 
 /*
@@ -16,7 +21,7 @@
 
 .logo
 {
-  margin-top: 18px;
+  margin-top: 6px;
 }
 
 
@@ -290,6 +295,11 @@
  * Шесть причин
  */
 
+.whywe
+{
+  min-height: 700px;
+}
+
 .whywe_list
 {
   font-size: 0;
@@ -311,6 +321,62 @@
 .whywe_body
 {
   font-size: 1rem;
+}
+
+
+
+/*
+ * Футер
+ */
+
+.faddress
+{
+  text-align: right;
+}
+
+.forder
+{
+  top: 95px;
+}
+
+.forder:before
+{
+  top: -210px;
+  left: 190px;
+}
+
+.forder:after
+{
+  content: "";
+  display: block;
+  width: 97px;
+  height: 117px;
+  background-repeat: no-repeat;
+  background-image: url(../img/arrow-footer.png);
+  background-position: center center;
+  position: absolute;
+  top: -130px;
+  left: 86px;
+}
+
+.fapp
+{
+  margin-top: 0px;
+  position: absolute;
+  right: 15px;
+  bottom: -45px;
+}
+
+.fapp:before
+{
+  content: "";
+  width: 143px;
+  height: 118px;
+  background: url(../img/ipone-half.png) no-repeat center top;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: -160px;
 }
 
 } /* <-- Small devices */

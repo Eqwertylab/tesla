@@ -12,17 +12,16 @@
 
   <aside class="sidebar_mob">
     <ul class="menu_mob">
-      <li><a href="">Функционал</a></li>
-      <li class="active"><a href="">Преимущества</a></li>
-      <li><a href="">Условия доставки</a></li>
-      <li><a href="">Вопрос - Ответ</a></li>
-      <li><a href="">Как мы работаем</a></li>
+      <li><a href="#specifications">Функционал</a></li>
+      <li><a href="#excellence">Преимущества</a></li>
+      <li><a href="#promo">Вопрос - Ответ</a></li>
+      <li><a href="#work">Как мы работаем</a></li>
     </ul>
   </aside>
 
   <div class="curtain" id="curtain"></div>
 
-  <div class="wrapper">
+  <div class="wrapper" data-spy="scroll" data-target="#navbar-header" data-offset="40">
     <div class="layout">
 
       <header class="header_mob visible-xs">
@@ -35,20 +34,19 @@
           <span></span>
         </div>
         
-        <a href="" class="logo_mob"></a>  
+        <a href="#top" class="logo_mob"></a>  
       </header>
 
-      <header class="header hidden-xs">
+      <header class="header hidden-xs" id="navbar-header">
         <div class="container">
           <div class="row">
-            <a href="#" class="col-sm-3 logo"></a>
+            <a href="#top" class="col-sm-3 logo"></a>
             
-            <ul class="menu">
-              <li><a href="">Функционал</a></li>
-              <li class="active"><a href="">Преимущества</a></li>
-              <li><a href="">Условия доставки</a></li>
-              <li><a href="">Вопрос - Ответ</a></li>
-              <li><a href="">Как мы работаем</a></li>
+            <ul class="menu nav nav-tabs">
+              <li><a href="#specifications">Функционал</a></li>
+              <li><a href="#excellence">Преимущества</a></li>
+              <li><a href="#promo">Вопрос - Ответ</a></li>
+              <li><a href="#work">Как мы работаем</a></li>
             </ul>
           </div>
         </div>
@@ -518,7 +516,7 @@
           </div>
         </section>
 
-        <section class="section work">
+        <section class="section work" id="work">
           <div class="container">
             <header class="section_head">Как мы работаем</header>
 
@@ -592,20 +590,44 @@
     <footer class="section footer">
       <div class="footer_container">
         
-        <div class="ftels">
-          <a href="#" class="footer_logo"></a>
-          <div class="ftels_item">8 (800) 123 45 67</div>
-          <div class="ftels_item">8 (495) 987 65 12</div>
+        <div class="row">
+          <div class="col-sm-6 ftels">
+            <a href="#" class="footer_logo"></a>
+            <div class="ftels_item">8 (800) 123 45 67</div>
+            <div class="ftels_item">8 (495) 987 65 12</div>
+          </div>
+
+          <div class="col-sm-6 faddress">
+            ООО “МосХайТек” <br>
+            ИНН 123456789456 <br>
+            г. Москва, ул.Новосадовая 5а <br>
+            info@teslawatch.ru
+          </div>
+        </div>
+
+        <div class="forder">
+          <div class="btn_wrap">
+            <button class="btn __order">Хочу такой браслет</button>
+          </div>
+        </div>
+
+        <div class="fapp">
+          <p>Удобное мобильное приложение</p>
+          <a href="" class="fapp_link __google"></a>
+          <a href="" class="fapp_link __apple"></a>
         </div>
       </div>
     </footer>
   </div>
+
   <script src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="js/jquery-validation/dist/localization/messages_ru.min.js"></script>
   <script src="js/jquery-validation/dist/additional-methods.min.js"></script>
   <script src="js/countdown.min.js"></script>
   <script src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
+  <script src="js/bootstrap-scrollspy.min.js"></script>
+  <script src="js/jquery.smooth-scroll.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
