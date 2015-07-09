@@ -86,7 +86,9 @@
               </div>
               <div class="col-sm-5">
 
-                <form action="" class="top_form">
+                <form action="send.php" class="form top_form"  id="form1">
+                
+                  <input type="hidden" name="template" value="email">
 
                   <div class="top_form_head">Закажите браслет и получите чехол для бега в подарок!</div>
 
@@ -223,7 +225,7 @@
             <div class="row">
               <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4  center-block specifications_order">
                 <div class="btn_wrap">
-                    <button class="btn __order">Хочу такой браслет</button>
+                    <button class="btn __order" data-modal="edit">Хочу такой браслет</button>
                   </div>
               </div>
             </div>
@@ -432,8 +434,10 @@
               </div>
             </div>
 
-            <form action="" class="promo_form">
+            <form action="send.php" class="form promo_form"  id="form2">
               <div class="promo_form_inner">
+                
+                <input type="hidden" name="template" value="email">
 
                 <div class="form_item">
                   <input type="text" name="name" placeholder="Ваше имя" class="base_control">
@@ -607,7 +611,7 @@
 
         <div class="forder">
           <div class="btn_wrap">
-            <button class="btn __order">Хочу такой браслет</button>
+            <button class="btn __order" data-modal="edit">Хочу такой браслет</button>
           </div>
         </div>
 
@@ -619,15 +623,51 @@
       </div>
     </footer>
   </div>
+  
+
+  <div class="modal_wrap">
+  
+    <div class="modal" data-modal-id="edit">
+      <div class="modal_inner">
+       
+        <section class="modal_body">
+              
+          <form action="send.php" class="form modal_form" id="form3">
+            
+            <input type="hidden" name="template" value="email">
+
+            <div class="top_form_head">Закажите браслет и получите чехол для бега в подарок!</div>
+
+            <div class="form_item">
+              <input type="text" name="name" placeholder="Ваше имя" class="base_control">
+            </div>
+
+            <div class="form_item">
+              <input type="text" name="phone" placeholder="Телефон" class="base_control">
+            </div>
+
+            <div class="form_item">
+              <div class="btn_wrap">
+                <button class="btn __order gradient">Заказать</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+
+      <span class="modal_close" data-modal-close="edit"></span>
+    </div>
+  </div>
 
   <script src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
-  <script src="js/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script src="js/jquery-validation/dist/localization/messages_ru.min.js"></script>
-  <script src="js/jquery-validation/dist/additional-methods.min.js"></script>
   <script src="js/countdown.min.js"></script>
   <script src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
   <script src="js/bootstrap-scrollspy.min.js"></script>
   <script src="js/jquery.smooth-scroll.js"></script>
+  <script src="js/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="js/jquery.form.min.js"></script>
+  <script src="js/modal/js/modal.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

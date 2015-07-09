@@ -14,12 +14,57 @@ App = {
       App.Fn.faq();
       App.Fn.hexagon();
       App.Fn.review();
+      App.Fn.form();
     })
   },
 
 
   
   Fn: {
+    form: function() {
+
+      var valid_option = {
+
+        rules: {
+
+          phone: {
+
+            required: true
+          }
+        },
+
+        errorPlacement: function(error, element) { }
+      }
+
+      var validator = $('#form1').validate(valid_option);
+      var validator2 = $('#form2').validate(valid_option);
+      var validator3 = $('#form3').validate(valid_option);
+
+      $('form').ajaxForm({
+
+        beforeSubmit: showRequest,
+        success: showResponse
+      });
+
+      function showRequest(formData, jqForm, options) { 
+
+        if( !$(jqForm).find('input.error').length ) {
+
+          return true; 
+        } else {
+
+          return false
+        }  
+      } 
+
+
+      function showResponse(responseText, statusText, xhr, $form) {
+
+        alert('status: ' + statusText + '\n\nresponseText: \n' + responseText + 
+        '\n\nThe output div should have already been updated with the responseText.'); 
+      }
+    },
+
     init_smooth_scroll: function() {
 
       $('.header_mob a, .header a, .menu_mob a').smoothScroll({

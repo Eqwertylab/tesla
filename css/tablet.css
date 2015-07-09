@@ -379,4 +379,25 @@
   left: -160px;
 }
 
+
+/*
+ * Модальное окно
+ */
+
+.modal
+{
+  width: 380px;
+}
+
+.modal_close
+{
+  top: 0px;
+  right: -25px;
+}
+
+.modal_inner
+{
+  padding: 15px 25px;
+}
+
 } /* <-- Small devices */
