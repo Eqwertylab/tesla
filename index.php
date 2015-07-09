@@ -87,8 +87,8 @@
               <div class="col-sm-5">
 
                 <form action="send.php" class="form top_form"  id="form1">
-                
-                  <input type="hidden" name="template" value="email">
+                  
+                  <input type="hidden" name="form_name" value="Заголовок">
 
                   <div class="top_form_head">Закажите браслет и получите чехол для бега в подарок!</div>
 
@@ -435,9 +435,10 @@
             </div>
 
             <form action="send.php" class="form promo_form"  id="form2">
+
+              <input type="hidden" name="form_name" value="Блок акция">
+
               <div class="promo_form_inner">
-                
-                <input type="hidden" name="template" value="email">
 
                 <div class="form_item">
                   <input type="text" name="name" placeholder="Ваше имя" class="base_control">
@@ -634,7 +635,7 @@
               
           <form action="send.php" class="form modal_form" id="form3">
             
-            <input type="hidden" name="template" value="email">
+            <input type="hidden" name="form_name" value="Всплывающее окно">
 
             <div class="top_form_head">Закажите браслет и получите чехол для бега в подарок!</div>
 
@@ -654,9 +655,17 @@
           </form>
         </section>
       </div>
-
-
       <span class="modal_close" data-modal-close="edit"></span>
+    </div>
+
+    <div class="modal" data-modal-id="answer">
+      <div class="modal_inner">
+        <section class="modal_body" id="answer_body">
+          <!-- Ответ -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum animi totam nam delectus optio quas sequi. Omnis fuga amet quae ipsum. Laboriosam veniam labore praesentium totam, quos incidunt iste autem.</p>
+        </section>
+      </div>
+      <span class="modal_close" data-modal-close="answer"></span>
     </div>
   </div>
 

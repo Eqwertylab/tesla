@@ -1,46 +1,34 @@
 <?php
-  if (isset($_REQUEST["template"]))
-  {
+  error_reporting(0);
+  $subject     = 'Заказ с сайта TeslaWatch';      // Тема письма
+  $target_mail = '79225555735@ya.ru';             // От кого - Мыло 
+  $from_name   = 'Сайт TeslaWatch';               // От кого - Имя отправителя  
+  
+  $order_name  = $_REQUEST['name'] ? $_REQUEST['name'] : 'Не указано';
+  $order_phone = $_REQUEST['phone'] ? $_REQUEST['phone'] : 'Не указано';
+  $form_name   = $_REQUEST['form_name'] ? $_REQUEST['form_name'] : 'Не указано';
 
-    $allowed_templates = array(
+  $message  = '<p>Имя: ' . $order_name . '</p>';
+  $message .= '<p>Телефон: ' . $order_phone . '</p>';
+  $message .= '<p>Форма: ' . $form_name . '</p>';
 
-      "email" => "79225555735@ya.ru"
-    );
+  if( mail_utf8($target_mail, $from_name, $target_mail, $subject, $message) ) {
 
-    if (!array_key_exists($_REQUEST["template"], $allowed_templates))
-      die("Template name not allowed");
-
-    $template_file = "mail-templates/".$_REQUEST["template"].".html";
-    $target_mail = $allowed_templates[$_REQUEST["template"]];
-    $name = $_POST['name'] ? $_POST['name'] : 'Сайт TeslaWatch';
-    $email = $_POST['email'] ? $_POST['email'] : '79225555735@ya.ru';
-    $subject = $_POST['subject'] ? $_POST['subject'] : 'Обращение с сайта TeslaWatch';
-
-    $message = file_get_contents($template_file, true);
-
-    foreach($_POST as $key => $value)
-      $message = str_replace("[[$key]]", $value, $message);
-
-    if( mail_utf8($target_mail, $name, $email, $_POST['subject'], $message) ) {
-
-      die('<div class="top_form_head">Спасибо за обращение!</div> <p>Вам позвонят в самое ближайшее время.</p>');
-    }
-    else
-    {
-
-      die('<div class="top_form_head">Ошибка отправки сообщения.</div> <p>Пожалуйста обратитесь по телефонам указаным на сайте.</p>');
-    }
+    echo '<div class="top_form_head">Спасибо за обращение!</div> <p>Вам позвонят в самое ближайшее время.</p>';
   }
   else
   {
-      die("Template name not received");
+
+    echo '<div class="top_form_head">Ошибка отправки сообщения.</div> <p>Пожалуйста обратитесь по телефонам указаным на сайте.</p>';
   }
 
-  function mail_utf8($to, $from_user, $from_email, $subject = '(No subject)', $message = '') { 
-    $from_user = "=?UTF-8?B?".base64_encode($from_user)."?=";
+
+  function mail_utf8($to, $from_user, $from_email, $subject = '(No subject)', $message = '') 
+  { 
+    $from_user = "=?UTF-8?B?".base64_encode($from_name)."?=";
     $subject = "=?UTF-8?B?".base64_encode($subject)."?=";
 
-    $headers =  "From: $from_user <$from_email>\r\n". 
+    $headers =  "From: $from_name <$target_mail>\r\n". 
                 "MIME-Version: 1.0" . "\r\n" . 
                 "Content-type: text/html; charset=UTF-8" . "\r\n"; 
 

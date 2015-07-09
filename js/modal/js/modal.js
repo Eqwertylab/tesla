@@ -1,42 +1,53 @@
-$(function() {
-	
-	$('.modal').css('display', 'none');
+Modal = {};
 
-	$('[data-modal]').click(function() {
+Modal = {
+  In: function($) {
 
-		showModal( $(this).data('modal') );
-	});
+    $(function() {
 
-	$('[data-modal-close]').click(function() {
+      Modal.Fn.init_modal();
+    })
+  },
 
-		hideModal( $(this).data('modal-close') );
-	});
+  Fn: {
 
+    init_modal: function() {
+      
+      $('.modal').css('display', 'none');
 
-	if( $('[data-modal-id="login"]').length ) {
+      $('[data-modal]').click(function() {
 
-		showModal('login');
-	}
+        Modal.Fn.showModal( $(this).data('modal') );
+      });
 
-	function showModal(elem) {
+      $('[data-modal-close]').click(function() {
 
-		var mwindow = $('[data-modal-id='+ elem +']');
+        Modal.Fn.hideModal( $(this).data('modal-close') );
+      });
+    },
 
-		if( mwindow.length ) {
-			$('html').addClass('__modal_open');
-			$(mwindow[0]).css('display', 'inline-block');
-		}
-	}
+    showModal: function(elem) {
+      
+      var mwindow = $('[data-modal-id='+ elem +']');
 
-	function hideModal(elem) {
+      if( mwindow.length ) {
+        $('html').addClass('__modal_open');
+        $(mwindow[0]).css('display', 'inline-block');
+      }
 
-		var mwindow = $('[data-modal-id='+ elem +']');
+    },
 
-		if( mwindow.length ) {
-			$('html').removeClass('__modal_open');
-			$(mwindow[0]).css('display', 'none');
-		}
-	}
-});
+    hideModal: function(elem) {
+      
+      var mwindow = $('[data-modal-id='+ elem +']');
 
+      if( mwindow.length ) {
+        $('html').removeClass('__modal_open');
+        $(mwindow[0]).css('display', 'none');
+      }
+    }
 
+  }
+}
+
+Modal.In(jQuery);

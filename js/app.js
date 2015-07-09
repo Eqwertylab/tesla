@@ -14,14 +14,14 @@ App = {
       App.Fn.faq();
       App.Fn.hexagon();
       App.Fn.review();
-      App.Fn.form();
+      App.Fn.init_form();
     })
   },
 
 
   
   Fn: {
-    form: function() {
+    init_form: function() {
 
       var valid_option = {
 
@@ -36,7 +36,7 @@ App = {
         errorPlacement: function(error, element) { }
       }
 
-      var validator = $('#form1').validate(valid_option);
+      var validator1 = $('#form1').validate(valid_option);
       var validator2 = $('#form2').validate(valid_option);
       var validator3 = $('#form3').validate(valid_option);
 
@@ -60,8 +60,13 @@ App = {
 
       function showResponse(responseText, statusText, xhr, $form) {
 
+        $('#answer_body').html(responseText);
+        Modal.Fn.hideModal('edit');
+        Modal.Fn.showModal('answer');
+        /*
         alert('status: ' + statusText + '\n\nresponseText: \n' + responseText + 
         '\n\nThe output div should have already been updated with the responseText.'); 
+        */
       }
     },
 
@@ -155,13 +160,13 @@ App = {
       $('.hexagon g').hover(function() {
 
         var desc_id = $(this).closest('.ex_item').addClass('__hover').data('descid');
-        $('.ex_inner').removeClass('__active zoomIn animated');
-        $('.ex_inner[data-desc="'+desc_id+'"]').addClass('__active zoomIn animated');
+        $('.ex_inner').removeClass('__active');
+        $('.ex_inner[data-desc="'+desc_id+'"]').addClass('__active');
       }, function() {
 
         $(this).closest('.ex_item').removeClass('__hover');
-        $('.ex_inner').removeClass('__active zoomIn animated');
-        $('.ex_inner.__image').addClass('__active zoomIn animated');
+        $('.ex_inner').removeClass('__active');
+        $('.ex_inner.__image').addClass('__active');
       });
     },
 
