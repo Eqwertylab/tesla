@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>TeslaWatsh</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -63,7 +66,11 @@
 
                 <div class="top_desc">
                   <div class="top_desc_title">Хотите узнать что такое TESLAWATCH?</div>
-                  <button class="btn __show_video">Смотреть видео</button>
+                  <button class="btn __show_video" 
+                    data-modal="video" 
+                    data-modal-after="start_video">
+                      Смотреть видео
+                  </button>
                 </div>
 
                 <table class="price_table">
@@ -625,6 +632,11 @@
     </footer>
   </div>
   
+  <div class="fake" id="fake">
+    Новый заказ: <br>
+    <b id="name">Иванов Иван</b> <br>
+    <span id="city">г. Оренбург</span>
+  </div>
 
   <div class="modal_wrap">
   
@@ -662,14 +674,33 @@
       <div class="modal_inner">
         <section class="modal_body" id="answer_body">
           <!-- Ответ -->
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum animi totam nam delectus optio quas sequi. Omnis fuga amet quae ipsum. Laboriosam veniam labore praesentium totam, quos incidunt iste autem.</p>
         </section>
       </div>
       <span class="modal_close" data-modal-close="answer"></span>
     </div>
+
+    <div class="modal __video" data-modal-id="video">
+      <div class="modal_inner">
+        <section class="modal_body">
+          <video 
+            id="example_video_1" 
+            class="video-js vjs-default-skin vjs-big-play-centered"
+            controls preload="auto" 
+            poster="video/caption.jpg" 
+            width="auto" height="auto"
+            data-setup='{}'>
+           <source src="video/TeslaWatch.mp4" type='video/mp4' />
+           <source src="video/TeslaWatch.webm" type='video/webm' />
+           <source src="video/TeslaWatch.ogv" type='video/ogg' />
+           <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+          </video>
+        </section>
+      </div>
+      <span class="modal_close" data-modal-close="video" data-modal-after="pause_video"></span>
+    </div>
   </div>
 
-  <script src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/countdown.min.js"></script>
   <script src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
   <script src="js/bootstrap-scrollspy.min.js"></script>
@@ -677,6 +708,7 @@
   <script src="js/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="js/jquery.form.min.js"></script>
   <script src="js/modal/js/modal.js"></script>
+  <script src="video-js/video.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

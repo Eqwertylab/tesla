@@ -43,6 +43,17 @@
   white-space: normal;
 }
 
+.modal.__video
+{
+  width: 90%;
+  max-width: 1000px;
+}
+
+.modal.__video .modal_body
+{
+
+}
+
 .modal_inner
 {
 	background: #fff;

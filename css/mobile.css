@@ -111,6 +111,19 @@ h1
 
 
 /*
+ * Видео
+ */
+
+.video-js 
+{
+  padding-top: 56.25%
+}
+
+.vjs-fullscreen {
+  padding-top: 0px
+}
+
+/*
  * Мобильное меню
  */
 
@@ -1555,3 +1568,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', end
 .modal_form .base_control:focus::-moz-placeholder          {color: transparent}
 .modal_form .base_control:focus:-moz-placeholder           {color: transparent}
 .modal_form .base_control:focus:-ms-input-placeholder      {color: transparent}
+
+
+/*
+ * Поддельные уведомления
+ */
+
+.fake
+{
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #b1bec2;
+  display: none;
+  z-index: 15000;
+
+  background: #f2f5f6;
+  background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc));
+  background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+  background: -o-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+  background: -ms-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+  background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 );
+
+}
+
+.fake.animated
+{
+  display: block;
+}

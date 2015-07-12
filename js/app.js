@@ -15,14 +15,104 @@ App = {
       App.Fn.hexagon();
       App.Fn.review();
       App.Fn.init_form();
+      App.Fn.init_video();
+      App.Fn.fake();
     })
   },
 
 
   
   Fn: {
+
+    fake: function() {
+
+      var TIME_MIN = 20000,      // Минимальное время перед показом
+          TIME_MAX = 45000,     // Максимальное время перед показом
+          TIME_SHOW = 4000,     // Время отображения
+          TIME_PAUSE = 1000;    // Время перед запуском очередного отсчета 
+
+      $.getJSON('fake.json')
+        .done(function( data ) {
+
+          App.Fake = data.fake.sort(function() {
+
+            return Math.random() - 0.6;
+          });
+
+          fakeWork();
+        });   
+
+      function fakeWork() {
+
+        var idx = App.FakeIdx++;
+        
+        console.log(App.Fake[idx]);
+
+        if(App.Fake[idx] == undefined) {
+
+          return false;
+        }
+
+        var fake = $('#fake');
+
+        fake.find('#name').text(App.Fake[idx]['name']);
+        fake.find('#city').text(App.Fake[idx]['city']);
+
+        $('.fake').removeClass('bounceInUp animated rotateOutUpRight');
+
+        var ran_delay = getRandom();
+
+        setTimeout(function() {
+
+          $('.fake').addClass('bounceInUp animated');
+
+          removeFake();
+        }, ran_delay);
+      }
+
+      function removeFake() {
+
+        setTimeout(function() {
+
+          $('.fake').addClass('rotateOutUpRight');
+
+          setTimeout(fakeWork, TIME_PAUSE);
+        }, TIME_SHOW);
+      }
+
+      function getRandom() {
+
+        return Math.random() * (TIME_MAX - TIME_MIN) + TIME_MIN;
+      }
+    },
+
+    init_video: function() {
+
+      window.videojs.options.flash.swf = "video-js/video-js.swf"
+      App.Fn.player = videojs('example_video_1', { "example_option": true }, function() {
+        
+      });
+    },
+
+    start_video: function() {
+
+      setTimeout(function() {
+
+        App.Fn.player.play();
+      }, 1000);  
+    },
+
+    pause_video: function() {
+
+      App.Fn.player.pause();
+    },
+
     init_form: function() {
 
+
+      /*
+       * Валидация форм
+       */
       var valid_option = {
 
         rules: {
@@ -40,6 +130,11 @@ App = {
       var validator2 = $('#form2').validate(valid_option);
       var validator3 = $('#form3').validate(valid_option);
 
+
+
+      /*
+       * Отправка форм
+       */
       $('form').ajaxForm({
 
         beforeSubmit: showRequest,
@@ -57,16 +152,16 @@ App = {
         }  
       } 
 
-
       function showResponse(responseText, statusText, xhr, $form) {
 
         $('#answer_body').html(responseText);
         Modal.Fn.hideModal('edit');
         Modal.Fn.showModal('answer');
-        /*
-        alert('status: ' + statusText + '\n\nresponseText: \n' + responseText + 
-        '\n\nThe output div should have already been updated with the responseText.'); 
-        */
+
+        setTimeout(function() {
+
+          Modal.Fn.hideModal('answer');
+        }, 5000)
       }
     },
 
@@ -224,7 +319,10 @@ App = {
         timer = setTimeout(slide, slide_delay);
       }
     }
-  }
+  },
+
+
+  FakeIdx: 0
 }
 
 App.In(jQuery);

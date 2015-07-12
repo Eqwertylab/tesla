@@ -113,7 +113,7 @@
 
 .excellence
 {
-  height: 700px;
+  height: 735px;
 }
 
 .ex_item.__mob_right
@@ -399,5 +399,11 @@
 {
   padding: 15px 25px;
 }
+
+.modal.__video .modal_inner
+{
+  padding: 15px;
+}
+
 
 } /* <-- Small devices */
