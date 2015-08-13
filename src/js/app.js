@@ -56,10 +56,10 @@ App = {
       // Установка значений целей для модальных окон
       $('[data-modal="edit"]').click(function() {
         
-        $('[data-modal-id="edit"]')
-          .find('form')
-          .data('form', $(this).data('form'));
+        var target = $(this).data('form');
+        yaCounter31448083.reachGoal(target);
       });  
+
 
       // Цель: Ушли на скачивание приложения
       $('.fapp_link').click(function() {
