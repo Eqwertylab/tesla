@@ -1,4 +1,5 @@
 <?php error_reporting(0); ?>
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,15 +112,20 @@
               </div>
               <div class="col-sm-5">
 
-                <form action="send.php" class="form top_form"  id="form1" data-form="forma-1">
+                <form action="http://teslawatch.leadvertex.ru/api/webmaster/v2/addOrder.html?webmasterID=21&token=passedlv" class="form top_form"  id="form1" data-form="forma-1" method="post">
                   
-                  <input type="hidden" name="form_name" value="Заголовок">
-                  <input type="hidden" name="url" value="<?php echo $_SERVER[SERVER_NAME].$_SERVER[REQUEST_URI]; ?>" >
+                  <input type="hidden" name="additional1" value="Заголовок">
+                  <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>" >
+                  <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>" >
+                  <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>" >
+                  <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>" >
+                  <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>" >
+
 
                   <div class="top_form_head">Закажите браслет и получите чехол для бега в подарок!</div>
 
                   <div class="form_item">
-                    <input type="text" name="name" placeholder="Ваше имя" class="base_control">
+                    <input type="text" name="fio" placeholder="Ваше имя" class="base_control">
                   </div>
 
                   <div class="form_item">
@@ -452,15 +458,20 @@
               </div>
             </div>
 
-            <form action="send.php" class="form promo_form"  id="form2" data-form="forma-3">
+            <form action="http://teslawatch.leadvertex.ru/api/webmaster/v2/addOrder.html?webmasterID=21&token=passedlv" class="form promo_form"  id="form2" data-form="forma-3" method="post">
 
-              <input type="hidden" name="form_name" value="Блок акция">
-              <input type="hidden" name="url" value="<?php echo $_SERVER[SERVER_NAME].$_SERVER[REQUEST_URI]; ?>" >
+
+              <input type="hidden" name="additional1" value="Блок акция">
+              <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>" >
+              <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>" >
+              <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>" >
+              <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>" >
+              <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>" >
 
               <div class="promo_form_inner">
 
                 <div class="form_item">
-                  <input type="text" name="name" placeholder="Ваше имя" class="base_control">
+                  <input type="text" name="fio" placeholder="Ваше имя" class="base_control">
                 </div>
 
                 <div class="form_item">
@@ -692,15 +703,19 @@
        
         <section class="modal_body">
               
-          <form action="send.php" class="form modal_form" id="form3">
+          <form action="http://teslawatch.leadvertex.ru/api/webmaster/v2/addOrder.html?webmasterID=21&token=passedlv" class="form modal_form" id="form3" method="post">
             
-            <input type="hidden" name="form_name" value="Всплывающее окно">
-            <input type="hidden" name="url" value="<?php echo $_SERVER[SERVER_NAME].$_SERVER[REQUEST_URI]; ?>" >
+            <input type="hidden" name="additional1" value="Всплывающее окно">
+            <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>" >
+            <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>" >
+            <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>" >
+            <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>" >
+            <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>" >
 
             <div class="top_form_head">Закажите браслет и получите чехол для бега в подарок!</div>
 
             <div class="form_item">
-              <input type="text" name="name" placeholder="Ваше имя" class="base_control">
+              <input type="text" name="fio" placeholder="Ваше имя" class="base_control">
             </div>
 
             <div class="form_item">
@@ -721,7 +736,8 @@
     <div class="modal" data-modal-id="answer">
       <div class="modal_inner">
         <section class="modal_body" id="answer_body">
-          <!-- Ответ -->
+          <div class="top_form_head">Спасибо за обращение!</div>
+          <p>Вам позвонят в самое ближайшее время.</p>
         </section>
       </div>
       <span class="modal_close" data-modal-close="answer"></span>

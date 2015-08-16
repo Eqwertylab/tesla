@@ -191,6 +191,7 @@ App = {
       /*
        * Валидация форм
        */
+      
       var valid_option = {
 
         rules: {
@@ -214,7 +215,7 @@ App = {
       $('form').ajaxForm({
 
         beforeSubmit: showRequest,
-        success: showResponse
+        complete: showResponse
       });
 
       function showRequest(formData, jqForm, options) { 
@@ -236,10 +237,10 @@ App = {
 
       function showResponse(responseText, statusText, xhr, $form) {
 
-        console.log('Благодарность');
+        console.log(responseText);
         yaCounter31448083.reachGoal('ty');
 
-        $('#answer_body').html(responseText);
+        // $('#answer_body').html(responseText);
         Modal.Fn.hideModal('edit');
         Modal.Fn.showModal('answer');
 
